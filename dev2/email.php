@@ -20,6 +20,7 @@ if(isset($_POST['email'])) {
 		function clean_string($string) {
 		  $bad = array("content-type","bcc:","to:","cc:","href");
 		  return str_replace($bad,"",$string);
+		  
 		}
 		 
 		$email_message .= "First Name: ".clean_string($first_name)."\n";
